@@ -4,6 +4,7 @@ export default function Headphones() {
     return (
         <div>
             <Navbar /> 
+            
             <h1>HEADPHONES</h1>
 
         </div>

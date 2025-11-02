@@ -1,46 +1,55 @@
 import Image from "next/image"
-import ArrowSign from "../../public/assets/shared/desktop/icon-arrow-right.svg" 
 import HEADPHONES from "../../public/assets/shared/desktop/image-category-thumbnail-headphones.png"
 import SPEAKERS from "../../public/assets/shared/desktop/image-category-thumbnail-speakers.png"
 import EARPHONES from "../../public/assets/shared/desktop/image-category-thumbnail-earphones.png"
+import { ChevronRight } from "lucide-react"
 
 export default function Display () {
     return (
-        <section className="flex mx-auto gap-25 items-center">
-            <span className="text-[#000000] rounded-md bg-[#F1F1F1] p-10 items-center font-bold w-[300px]">
-                <Image src={HEADPHONES} alt="HEADPHONES" />
-                    
-                <h1>HEADPHONES</h1>
+        <div className="flex items-center justify-center w-full">
 
-                <div className="flex gap-2 text-center">
-                    <p className="text-[13px] text-center">SHOP</p>
-                    <Image  src={ArrowSign} alt="" />
-                </div>
-            </span>
+            <section className="flex gap-25 max-w-[80%] items-center mt-10">
+                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[300px]">
+                    <div className="absolute top-[-50] botom-0">
+                        <Image src={HEADPHONES} alt="HEADPHONES" width={120} />
+                    </div>
+                        
+                    <h1 className="mt-5 font-bold">HEADPHONES</h1>
 
-            <span className="text-[#000000] rounded-md bg-[#F1F1F1] p-10 items-center font-bold w-[300px]">
-                <Image src={SPEAKERS} alt="SPEAKERS" />
+                    <div className="flex gap-2 text-center">
+                        <p className="text-[13px]">SHOP</p>
+                        <ChevronRight  color="#D87D4A" size={20}/>
+                    </div>
+                </span>
 
-                <h1>SPEAKERS</h1>
+                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[300px]">
+                    <div className="absolute top-[-40] botom-0">
+                        <Image src={SPEAKERS} alt="SPEAKERS" width={120} />
+                    </div>
+                        
+                    <h1 className="mt-5 font-bold">SPEAKERS</h1>
 
-                <div className="flex gap-2 text-center">
-                    <p className="text-[13px] text-center">SHOP</p>
-                    <Image  src={ArrowSign} alt="" />
-                </div>
-            </span>
+                    <div className="flex gap-2 text-center">
+                        <p className="text-[13px]">SHOP</p>
+                        <ChevronRight  color="#D87D4A" size={20}/>
+                    </div>
+                </span>
 
-            <span className="text-[#000000] rounded-md bg-[#F1F1F1] p-10 items-center font-bold w-[300px]">
-                <Image src={EARPHONES} alt="EARPHONES" />
+                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[300px]">
+                    <div className="absolute top-[-35] botom-0">
+                        <Image src={EARPHONES} alt="EARPHONES" width={120} />
+                    </div>
+                        
+                    <h1 className="mt-5 font-bold">EARPHONES</h1>
 
-                <h1>EARPHONES</h1>
+                    <div className="flex">
+                        <p className="text-[13px]">SHOP</p>
+                        <ChevronRight  color="#D87D4A" size={20}/>
+                    </div>
+                </span>
 
-                <div className="flex gap-2 items-center">
-                    <p className="text-[13px] text-center">SHOP</p>
-                    <Image  src={ArrowSign} alt="" />
-                </div>
-            </span>
+            </section>
 
-        </section>
+        </div>
     )
-
 }
