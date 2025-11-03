@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Svg from "../../public/assets/home/desktop/pattern-circles.svg"
 import Speaker from "../../public/assets/home/desktop/image-removebg-preview.png"
-import EARPHONES from "../../public/assets/shared/desktop/image-category-thumbnail-earphones.png"
 import Zx7 from "../../public/assets/home/desktop/image-speaker-zx7.jpg"
 import Yx1 from "../../public/assets/home/desktop/image-earphones-yx1.jpg"
 import Display from "./Display"
@@ -15,7 +14,7 @@ export default function Body() {
 
             <div className="flex flex-col justify-between py-10 w-full m-auto">
                 
-                <div className="flex justify-between tems-center relative z-1 bg-[#D87D4A] mx-auto rounded-md">
+                <div className="flex justify-between items-center relative z-1 bg-[#D87D4A] mx-auto rounded-md">
 
                     <div className="relative">
                         <span>
@@ -42,37 +41,37 @@ export default function Body() {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-between py-10 w-full border-2 border-black">
-                <div className="border-2 border-black relative flex items-center m-auto justify-between bg-[#F1F1F1] text-[#000000] font-bold">
-                    <section className="z-[-5]">
+            <div className="flex flex-col justify-between w-full">
+                <div className="relative rounded-md flex items-center m-auto justify-between bg-[#F1F1F1] text-[#000000] font-bold">
+                    <section className="absolute top-10 left-20 z-9 mt-10">
                         <h1>ZX7 SPEAKER</h1>
 
-                        <button className="font-bold text-[#000000] border-2 p-2 w-[150px] mt-5">SEE PRODUCT</button>
+                        <button className="font-bold text-[#000000] border p-2 w-[150px] mt-5">SEE PRODUCT</button>
                     </section>
 
-                    <span className="z-1">
-                        <Image src={Zx7} alt="ZX7 Speaker" width={900} />
+                    <span className="z-1 rounded-md">
+                        <Image src={Zx7} alt="ZX7 Speaker" width={870} className="rounded-md" />
                     </span>
                 </div>
-
-                <div className="flex mt-10 justify-between">
-                    <section className="w-[50%]">
-                        <Image src={Yx1} alt ="Yx1 image" width={600} />
-                    </section>
-
-                    <section className="w-[50%] bg-[#F1F1F1] text-black text-center">
-                        <h1 className="font-bold text-[#000000] mt-25">YX1 EARPHONES</h1>
-                        <button className="font-bold text-[#000000] outline-2 bg-[#F1F1F1] p-5 w-[150px] mt-5">SEE PRODUCT</button>
-                    </section>
-                
-                </div>
-
-                <Best />
-
             </div>
+
+            <div className="flex flex-col justify-between w-full py-10">
+                <div className="flex items-center m-auto max-w-[80%]">
+                    <section className="w-2xl">
+                        <Image src={Yx1} alt ="Yx1 image" width={350} className="rounded-md" />
+                    </section>
+
+                    <section className="w-3xl h-50 flex flex-col items-center justify-center bg-[#F1F1F1] text-black rounded-md">
+                        <h1 className="font-bold text-[#000000] text-3xl">YX1 EARPHONES</h1>
+                        <button className="font-bold text-[#000000] border-2 p-3 bg-[#F1F1F1] mt-5">SEE PRODUCT</button>
+                    </section>
+                    
+                </div>
+            </div>
+               
+            <Best />
             
         </div>
-       
     )
 }
 

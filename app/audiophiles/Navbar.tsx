@@ -10,17 +10,20 @@ export default function Navbar () {
                 <Image  src={Logo} alt="lOGO"/>
                 <span className="flex">
                     <ul className="flex gap-4">
-                        <Link href={"/"}><li>HOME</li></Link>
-                        <Link href={"/Headphones"}><li>HEADPHONES</li></Link>
-                        <Link href={"/Speakers"}><li>SPEAKERS</li></Link>
-                        <Link href={"/Earphones"}><li>EARPHONES</li></Link>
+                        <li><Link href="/">HOME</Link></li>
+                        <li><Link href="/Headphones">HEADPHONES</Link></li>
+                        <li><Link href="/Speakers">SPEAKERS</Link></li>
+                        <li><Link href="/Earphones">EARPHONES</Link></li>
                     </ul>
+
                 </span>
 
                 <Image  src={Cart} alt="lOGO"/>
-
+                
             </nav>
+
+            <hr className="mx-25" />
+
         </div>
-        
     )
 }
