@@ -3,9 +3,9 @@ import Man from "../../public/assets/man.png"
 
 export default function Best() {
     return (
-        <div className="flex flex-col justify-between w-full">
-            <div className="flex justify-between gap-37 bg-[#ffffff] m-auto max-w-[80%] mt-1">
-                <section className="flex flex-col mt-10">
+        <div className="flex flex-col justify-between w-full mt-15">
+            <div className="flex justify-between gap-60 bg-[#ffffff] m-auto max-w-[80%]">
+                <section className="flex flex-col mt-20">
                         
                     <h1 className="text-[#000000] text-[35px] font-bold">BRINGING YOU THE <br /> <span className="text-[#D87D4A]">BEST</span> AUDIO GEAR</h1>
                         

@@ -5,7 +5,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 
 export default function Footer () {
     return (
-       <div className="flex flex-col gap-10 border w-full bg-[#000000] text-white p-7 border">
+       <div className="flex flex-col gap-10 w-full bg-[#000000] text-white p-7">
             <div className="w-full">
                 <nav className="flex justify-between py-5 max-w-[80%] mx-auto bg-[#000000] text-white font-bold">
                     <Image  src={Logo} alt="lOGO"/>
@@ -23,7 +23,7 @@ export default function Footer () {
 
             <div className="flex w-full">
                 <div className="flex flex-col mx-auto">
-                    <section className="flex items-center justify-between gap-50">
+                    <section className="flex items-center justify-between gap-105">
                         <p className="font-medium text-[15px]">
                             Audiophile is an all in one stop to fulfill your audio needs. 
                             We are a small team <br /> of music lovers and sound specialists who are 

@@ -6,10 +6,10 @@ import { ChevronRight } from "lucide-react"
 
 export default function Display () {
     return (
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full mt-15">
 
-            <section className="flex gap-25 max-w-[80%] items-center mt-10">
-                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[300px]">
+            <section className="flex gap-30 justify-around max-w-[80%] 2xl:w-[60%]">
+                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[600px]">
                     <div className="absolute top-[-50] botom-0">
                         <Image src={HEADPHONES} alt="HEADPHONES" width={120} />
                     </div>
@@ -22,7 +22,7 @@ export default function Display () {
                     </div>
                 </span>
 
-                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[300px]">
+                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[600px]">
                     <div className="absolute top-[-40] botom-0">
                         <Image src={SPEAKERS} alt="SPEAKERS" width={120} />
                     </div>
@@ -35,7 +35,7 @@ export default function Display () {
                     </div>
                 </span>
 
-                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[300px]">
+                <span className="flex flex-col items-center text-[#000000] relative rounded-md bg-[#F1F1F1] p-10 w-[600px]">
                     <div className="absolute top-[-35] botom-0">
                         <Image src={EARPHONES} alt="EARPHONES" width={120} />
                     </div>

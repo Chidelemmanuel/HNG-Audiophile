@@ -8,21 +8,21 @@ import Best from "./Best"
 
 export default function Body() {
     return (
-        <div className="flex flex-col items-center justify-center w-full bg-[#ffffff] py-9">
+        <div className="flex flex-col items-center justify-center w-full bg-[#ffffff] py-9" >
                 
             <Display />
 
-            <div className="flex flex-col justify-between py-10 w-full m-auto">
+            <div className="flex flex-col justify-between py-10 w-full mx-auto mt-15">
                 
-                <div className="flex justify-between items-center relative z-1 bg-[#D87D4A] mx-auto rounded-md">
+                <div className="flex items-center relative z-1 bg-[#D87D4A] mx-auto rounded-md w-[80%] mt-5 2xl:w-[60%]">
 
-                    <div className="relative">
-                        <span>
-                            <Image src={Svg} alt="Speaker" width={450} />
+                    <div className="relative flex 2xl:w-[60%]">
+                        <span className="">
+                            <Image src={Svg} alt="SVG" width={550} />
                         </span> 
 
                         <span className="absolute top-28 left-[35] z-2">
-                            <Image src={Speaker} alt="Speaker" width={300} />
+                            <Image src={Speaker} alt="Speaker" width={389} />
                         </span>
                     </div>
 
@@ -41,8 +41,8 @@ export default function Body() {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-between w-full">
-                <div className="relative rounded-md flex items-center m-auto justify-between bg-[#F1F1F1] text-[#000000] font-bold">
+            <div className="flex flex-col justify-between w-full mt-15">
+                <div className="relative rounded-md flex items-center m-auto justify-between bg-[#F1F1F1] text-[#000000] font-bold max-w-[80%]">
                     <section className="absolute top-10 left-20 z-9 mt-10">
                         <h1>ZX7 SPEAKER</h1>
 
@@ -50,20 +50,20 @@ export default function Body() {
                     </section>
 
                     <span className="z-1 rounded-md">
-                        <Image src={Zx7} alt="ZX7 Speaker" width={870} className="rounded-md" />
+                        <Image src={Zx7} alt="ZX7 Speaker" width={1100} className="rounded-md 2xl:w-[1140]" />
                     </span>
                 </div>
             </div>
 
-            <div className="flex flex-col justify-between w-full py-10">
-                <div className="flex items-center m-auto max-w-[80%]">
-                    <section className="w-2xl">
-                        <Image src={Yx1} alt ="Yx1 image" width={350} className="rounded-md" />
+            <div className="flex flex-col justify-between w-full mt-15 py-10">
+                <div className="flex items-center m-auto max-w-[80%] 2xl:w-[60%]">
+                    <section className="w-[600]">
+                        <Image src={Yx1} alt ="Yx1 image" width={450} className="rounded-md" />
                     </section>
 
-                    <section className="w-3xl h-50 flex flex-col items-center justify-center bg-[#F1F1F1] text-black rounded-md">
+                    <section className="flex flex-col items-left justify-center bg-[#F1F1F1] text-black rounded-md w-[600] p-20">
                         <h1 className="font-bold text-[#000000] text-3xl">YX1 EARPHONES</h1>
-                        <button className="font-bold text-[#000000] border-2 p-3 bg-[#F1F1F1] mt-5">SEE PRODUCT</button>
+                        <button className="font-bold text-[#000000] border-2 p-3 bg-[#F1F1F1] mt-5 w-[200]">SEE PRODUCT</button>
                     </section>
                     
                 </div>

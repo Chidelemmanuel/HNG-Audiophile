@@ -6,7 +6,7 @@ import Logo from "@/public/assets/logo.svg"
 export default function Navbar () {
     return (
         <div className="w-full">
-            <nav className="flex justify-between py-5 max-w-[80%] mx-auto bg-[#000000] text-white font-bold">
+            <nav className="flex justify-between py-5 max-w-[80%] mx-auto bg-[#000000] text-white font-bold 2xl:w-[60%]">
                 <Image  src={Logo} alt="lOGO"/>
                 <span className="flex">
                     <ul className="flex gap-4">
