@@ -1,9 +1,10 @@
 import Image from "next/image"
 import YX1 from "@/public/assets/product-yx1-earphones/desktop/image-product.jpg"
-import ZX7 from "@/public/assets/product-zx7-speaker/desktop/image-product.jpg"
+// import ZX7 from "@/public/assets/product-zx7-speaker/desktop/image-product.jpg"
 import Display from "../audiophiles/Display"
 import Best from "../audiophiles/Best"
 import Footer from "../audiophiles/Footer"
+import Link from "next/link"
 
 export default function EarNewproduct() {
     return (
@@ -25,7 +26,9 @@ export default function EarNewproduct() {
                         noise cancellation feature.
                     </p>
 
-                    <button className="font-bold bg-[#D87D4A] p-3 mt-5 text-[13px] text-white"> SEE PRODUCT </button>
+                    <Link href="/Earphones/productdetails/YX1-EARPHONES">
+                        <button className="font-bold bg-[#D87D4A] p-3 mt-5 text-[13px] text-white"> SEE PRODUCT </button>
+                    </Link>
                 </section>
             </div>
 

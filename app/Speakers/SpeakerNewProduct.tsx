@@ -4,6 +4,7 @@ import ZX7 from "@/public/assets/product-zx7-speaker/desktop/image-product.jpg"
 import Display from "../audiophiles/Display"
 import Best from "../audiophiles/Best"
 import Footer from "../audiophiles/Footer"
+import Link from "next/link"
 
 export default function SpeakerNewProduct() {
     return (
@@ -25,8 +26,10 @@ export default function SpeakerNewProduct() {
                         wireless connectivity -- creating new possibilities for more <br />
                         pleasing and practical audio setups.
                     </p>
-
-                    <button className="font-bold bg-[#D87D4A] p-3 mt-5 text-[13px] text-white"> SEE PRODUCT </button>
+                    
+                    <Link href="/Speakers/productdetails/ZX9-SPEAKER">
+                        <button className="font-bold bg-[#D87D4A] p-3 mt-5 text-[13px] text-white"> SEE PRODUCT </button>
+                    </Link>
                 </section>
             </div>
 
@@ -41,7 +44,9 @@ export default function SpeakerNewProduct() {
                         studio use.
                     </p>
 
-                    <button className="font-bold bg-[#D87D4A] p-3 mt-10 text-[13px] text-white"> SEE PRODUCT </button>
+                    <Link href="/Speakers/productdetails/ZX7-SPEAKER">
+                        <button className="font-bold bg-[#D87D4A] p-3 mt-10 text-[13px] text-white"> SEE PRODUCT </button>
+                    </Link>
                 </section>
 
                 <div>

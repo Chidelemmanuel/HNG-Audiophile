@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { products } from "@/data/products";
+import { earphone } from "@/data/earphone";
 import Navbar from "@/app/audiophiles/Navbar";
 import Link from "next/link"
 import Hook from "../Hook"
@@ -13,7 +13,7 @@ export default async function ProductDetails({
   params: Promise<{ productid: string }> 
 }) {
   const { productid } = await params;
-  const product = products.find((item) => item.id === productid);
+  const product = earphone.find((item) => item.id === productid);
 
   if (!product) {
     return <h1>Product Not Found</h1>;
@@ -25,11 +25,11 @@ export default async function ProductDetails({
       <div className="flex flex-col text-white items-center w-full bg-[#000000] font-family: [manrope]">
         <Navbar /> 
 
-        <h1 className="text-3xl font-bold py-12">{product.name}</h1>
+        <h1 className="text-3xl font-bold py-12">{earphone.name}</h1>
 
       </div>
 
-      <Link href="/Headphones"><button className="p-3 mx-20 text-[15px] text-black">Go Back</button></Link>
+      <Link href="/Earphones"><button className="p-3 mx-20 text-[15px] text-black">Go Back</button></Link>
 
       <div className="flex mt-5 items-center gap-100 justify-between max-w-[80%] m-auto 2xl:w-[60%] border">
 
@@ -80,7 +80,7 @@ export default async function ProductDetails({
           <section>
             <h1 className="font-bold text-4xl">IN THE BOX</h1>
             <span className="flex gap-5 mt-3">
-              <h6 className="font-bold text-[#D87D4A]">1x</h6>
+              <h6 className="font-bold text-[#D87D4A]">2x</h6>
               <p>{product.box1}</p>
             </span>
 
@@ -101,10 +101,7 @@ export default async function ProductDetails({
 
             <span className="flex gap-5 mt-3">
               <h6 className="font-bold text-[#D87D4A]">1x</h6>
-              <div>{product.box5 && (
-                <p>Travel Bag</p>
-                )}
-              </div>
+              <p>{product.box5}</p>
             </span>
 
           </section>
@@ -159,7 +156,7 @@ export default async function ProductDetails({
               </span>
 
               <span className="flex flex-col items-center">
-                <h1 className="font-bold mt-5">XX59 MARK I</h1>
+                <h1 className="font-bold mt-5">XX59</h1>
                 <button className="font-bold bg-[#D87D4A] p-3 mt-5 text-[13px] text-white">
                   SEE PRODUCT
                 </button>
@@ -172,7 +169,7 @@ export default async function ProductDetails({
               </span>
 
               <span className="flex flex-col items-center">
-                <h1 className="font-bold mt-5">ZX9 SPEAKER</h1>
+                <h1 className="font-bold mt-5">ZX7 SPEAKER</h1>
                 <button className="font-bold bg-[#D87D4A] p-3 mt-5 text-[13px] text-white">
                   SEE PRODUCT
                 </button>

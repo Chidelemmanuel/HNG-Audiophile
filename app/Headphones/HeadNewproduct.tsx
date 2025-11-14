@@ -93,7 +93,7 @@ export default function HeadNewProduct () {
 
             </div>
 
-            <div className="space-y-20">
+            <div className="space-y-20 mt-10">
                 <Display />
                 <Best />
                 <Footer />
