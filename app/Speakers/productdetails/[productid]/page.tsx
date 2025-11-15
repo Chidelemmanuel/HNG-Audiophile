@@ -66,7 +66,7 @@ export default async function ProductDetails({
       </div>
 
       <div className="flex flex-col w-full">
-        <div className="flex mt-15 gap-30 items-center justify-center max-w-[80%] m-auto">
+        <div className="flex mt-15 gap-30 items-center justify-center max-w-[80%] m-auto 2xl:w-[70%]">
           <section className="w-[60%]">
             <h1 className="font-bold text-4xl">Features</h1>
             <p className="mt-6 text-[16px]">{product.features}</p> 

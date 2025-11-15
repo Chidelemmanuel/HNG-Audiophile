@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function EarNewproduct() {
     return (
         <div>
-            <div className="flex my-15 justify-between max-w-[80%] m-auto">
+            <div className="flex my-15 justify-between max-w-[80%] m-auto 2xl:w-[60%]">
                 <div>
                     <span>
                     <Image src={YX1} alt="Speaker-Image" width={500} className="rounded-md"  />

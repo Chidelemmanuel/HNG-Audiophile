@@ -10,7 +10,7 @@ import Link from "next/link"
 export default function HeadNewProduct () {
     return (
         <div className="mt-5">
-            <div className="flex mt-15 gap-22 items-center max-w-[80%] m-auto px-10">
+            <div className="flex mt-15 gap-22 items-center max-w-[80%] m-auto px-10 2xl:w-[60%]">
 
                 <div>
                     <span>
@@ -38,7 +38,7 @@ export default function HeadNewProduct () {
             </div>
 
 
-            <div className="flex mt-15 gap-22 items-center max-w-[80%] m-auto">
+            <div className="flex mt-15 gap-22 items-center max-w-[80%] m-auto 2xl:w-[60%]">
                 <section className="mt-5 px-10">
                     <h1 className="font-bold text-[40px]">XX99 Mark I <br /> Headphones</h1>
                     <p className="mt-2 font-normal leading-9">
@@ -65,7 +65,7 @@ export default function HeadNewProduct () {
 
             <div>
 
-                <div className="flex my-15 gap-22 items-center max-w-[80%] m-auto px-10">
+                <div className="flex my-15 gap-22 items-center max-w-[80%] m-auto px-10 2xl:max-w-[60%]">
 
                     <div>
                         <span>

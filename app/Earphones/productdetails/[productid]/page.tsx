@@ -26,7 +26,7 @@ export default async function ProductDetails({
         <Navbar /> 
       </div>
 
-      <Link href="/Earphones"><button className="p-3 mx-20 text-[15px] text-black">Go Back</button></Link>
+      <Link href="/Earphones"><button className="p-3 mx-20 text-[15px] text-black 2xl:w-[35%]">Go Back</button></Link>
 
       <div className="flex mt-5 items-center gap-100 justify-between max-w-[80%] m-auto 2xl:w-[60%]">
 
@@ -66,7 +66,7 @@ export default async function ProductDetails({
       </div>
 
       <div className="flex flex-col w-full">
-        <div className="flex mt-15 gap-30 items-center justify-center max-w-[80%] m-auto">
+        <div className="flex mt-15 gap-30 items-center justify-center max-w-[80%] m-auto 2xl:w-[70%]">
           <section className="w-[60%]">
             <h1 className="font-bold text-4xl">Features</h1>
             <p className="mt-6 text-[16px]">{product.features}</p> 

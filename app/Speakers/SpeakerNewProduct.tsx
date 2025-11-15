@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function SpeakerNewProduct() {
     return (
         <div>
-            <div className="flex mt-15 justify-between max-w-[80%] m-auto">
+            <div className="flex mt-15 justify-between max-w-[80%] m-auto 2xl:w-[60%]">
 
                 <div>
                     <span>
@@ -33,7 +33,7 @@ export default function SpeakerNewProduct() {
                 </section>
             </div>
 
-            <div className="flex my-25 gap-1 justify-between max-w-[80%] m-auto">
+            <div className="flex my-25 gap-1 justify-between max-w-[80%] m-auto 2xl:w-[60%]">
 
                 <section className="mt-25 mx-15">
                     <h1 className="font-bold text-[40px]">ZX7 <br /> SPEAKER</h1>
