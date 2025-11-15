@@ -7,9 +7,9 @@ export default function HomePage() {
   return (
     <div className="flex flex-col text-white w-full bg-[#000000] font-family: [manrope]">
       <Navbar />
-      {/* <NewProduct /> */}
-      {/* <Body /> */}
-      {/* <Footer /> */}
+      <NewProduct />
+      <Body />
+      <Footer />
     </div>
   );
 }
