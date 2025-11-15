@@ -7,7 +7,7 @@ export default function Footer () {
     return (
        <div className="flex flex-col gap-10 w-full bg-[#000000] text-white p-7">
             <div className="w-full">
-                <nav className="flex justify-between py-5 max-w-[80%] mx-auto bg-[#000000] text-white font-bold">
+                <nav className="flex justify-between py-5 max-w-[80%] mx-auto bg-[#000000] text-white font-bold 2xl:w-[57%]">
                     <Image  src={Logo} alt="lOGO"/>
                     <span className="flex">
                         <ul className="flex gap-4">
